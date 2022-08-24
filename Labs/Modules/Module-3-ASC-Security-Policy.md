@@ -14,7 +14,7 @@ To get started with Microsoft Defender for Cloud, you must have a subscription t
 ### Exercise 1: Overview of the Microsoft Defender for Cloud policy
 
 1.	On Microsoft Defender for Cloud blade, from the left navigation pave, click on **Environment Settings**. 
-2. Then select **Subscription 1** and from the left navigation select **Security policy**.
+2.  Then select your Azure subscription and from the left navigation select **Security policy**.
 3.	As you can see on the top part, there is 1 assignment under **Default initiative** which is **ASC default (subscription: xxx...)**.
 
 ![Microsoft Defender for Cloud default policy](../Images/module3_defaultinitiative_ascdefault_yl.png?raw=true)
@@ -42,11 +42,10 @@ Note: This is the default policy for Microsoft Defender for Cloud recommendation
 ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/module3_azurepolicy_securitycenter_yl.png?raw=true)
 5.	Notice the number of policies included in each initiative (policies column)
 6.	Initiatives are assigned to your subscription automatically. To see current assignments, click on **Assignment** from the left navigation pane. Policy initiatives have a different name for the assignment, for example:
-
-   
     - ASC DataProtection 
     - ASC OpenSourceRelationalDatabasesProtection
     - ASC Default 
+
 7.	Click on **ASC Default** to edit assignment details
 8.	As you can see, this is the same assignment page as presented in the previous section. Now exit.
 
@@ -65,9 +64,9 @@ Note: Exemptions is a premium Azure policy capability that's offered for Microso
 
 ![Create exemption](../Images/asc-management-ports-resource-exemption.gif?raw=true)
 
-6.	The create **exemption pane** opens:
+6.	The **Create exemption pane** opens:
    *	Keep the default name.
-*	Click the expiration button ON and set datetime for two days ahead on 12:00 AM.
+   *    Click the expiration button ON and set datetime for two days ahead on 12:00 AM.
 
     - Select **Waiver** as exemption category.
     - Provide a description: **Testing exemption capability – module 3**.
@@ -106,20 +105,20 @@ Note: Exemptions is a premium Azure policy capability that's offered for Microso
 
 ![Prevent resource creation](../Images/asc-storage-deny-policy.gif?raw=true)
 
-6.	Go back to the **recommendations view**, and remove the Deny-only filter. From the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
+6.	Go back to the **Recommendations view**, and remove the Deny-only filter. From the search area, type **Auditing**. Click on the recommendation **Auditing on SQL server should be enabled**.
 
 ![Auditing on SQL server should be enabled](../Images/asc-auditing-sql.gif?raw=true)
 
 7.	On the recommendations page, from the top menu bar, click on **Enforce** button. Using this option allow you to take advantage of Azure policy’s DeployIfNotExist effect and automatically remediate non-compliant resources upon creation.
 8.	Once the configuration pane opens with all of the policy configuration options, select the following configuration settings:
 
-* On Scope, select **Azure subscription 1**. **Click Select**.
+* On Scope, select your subscription. **Click Select**.
 * Click **Next**
 * Keep retention days as is and select then resource group **asclab**
 Select **Review + create** to assign the policy on your subscription.
 * Click **Create**
 
-1. On the recommendation page, **select** the SQL Server resource found on the **unhealthy resources** tab (asclab-sql-xxx) and click **Remediate**. Click **Remediate 1 resource**. By doing both operations, you can now be ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
+9. On the recommendation page, **Select** the SQL Server resource found on the **Unhealthy resources** tab (asclab-sql-xxx) and click **Remediate**. Click **Remediate 1 resource**. By doing both operations, you can now be ensure your existing resources and new ones will be enabled for auditing. Auditing on your SQL Server helps you track database activities across all databases on the server and save them in an audit log.
 
 10.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/prevent-misconfigurations#recommendations-with-denyenforce-options "Recommendations with deny/enforce options") to view a full list of recommendations with deny/enforce options along with detailed explanation of this capability.
 11.	[Click here](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#security-controls-and-their-recommendations "Security controls and their recommendations") to review a list of security controls and their recommendations.
