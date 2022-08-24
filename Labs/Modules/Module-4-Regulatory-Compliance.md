@@ -19,7 +19,7 @@ This exercise guides you through the current Microsoft Defender for Cloud polici
 You can add additional industry standards (represented as compliance packages) such as IST SP 800-53 R4, SWIFT CSP CSCF-v2020, UK Official and more.
 
 1.	From the top menu bar in Regulatory Compliance, select **Manage compliance policies**.
-2.	Select a scope to assign the new package: **Azure subscription 1**.
+2.	Select a scope to assign the new package: your subscription.
 3.  Click on **Security policy** from the blade on the left, under Policy ettings. 
 3.	On the **Industry & regulatory standards** section, notice the out of the box standards. Click on **Add more standards**.
 4.	On the **Add regulatory compliance standards**, locate the **Azure CIS 1.1.0** standard and select **Add**.
@@ -36,7 +36,7 @@ You can add additional industry standards (represented as compliance packages) s
    
 ### Exercise 3: Exploring a benchmark 
 1.	From the top menu bar in Regulatory Compliance, select **Manage compliance policies** which can be found next to **Download report**, above the **Lowest compliance regulatory standards** tile.
-2. Then select **Azure Subscription 1** and choose **Security Policy** from the sidebar.
+2. Then select your subscription and choose **Security Policy** from the sidebar.
 3.	In the **Industry & regulatory standards** section, notice the out of the box standards like Azure Security Benchmark, PCI DSS 3.2.1 and ISO 27001.
 4.	Locate the **PCI DSS 3.2.1** standard and select **Enable**.
 ![Regulatory compliance assessment and standards](../Images/mdfc-pci.png?raw=true)
@@ -51,7 +51,7 @@ Once you have enabled PCI DSS 3.2.1, now we will explore a particular control in
 
 2.	Click to open up **4. Encrypt transmission of cardholder data across open, public networks.**
 3.	Click to open **control 4.1**
-4.  Click open **control 4.1.***
+4.  Click to open **control 4.1.*.**
 ![Regulatory compliance assessment and standards](../Images/lab4rc2.gif?raw=true)
 5.	Click to open **Secure transfer to storage accounts should be enabled.**
 6.	In the new pane, tick the box for the unhealthy resource titled asclabXXXXXX, and select **Fix** at the bottom of the page. 
@@ -115,7 +115,7 @@ Compliance dashboard over time is a Workbook in Microsoft Defender for Cloud ded
 
 You'll need to configure continuous export first to export data to a Log Analytics workspace:
 1.	From Microsoft Defender for Cloud's sidebar, select **Environment Settings**.
-2.	Select **Azure Subscription 1** for which you want to configure the data export.
+2.	Select the subscription for which you want to configure the data export.
 3.	From the sidebar of the settings page for that subscription, select **Continuous Export**.
 4.	Click on the **Log Analytics workspace**. Set the export enable to **On** (which is the tab beside Event hub).
 ![Regulatory compliance assessment and standards](../Images/lab4rc8.jpg?raw=true)
@@ -132,7 +132,7 @@ Compliance dashboard over time
 2.	Select the Compliance Over Time Workbook located under Defender for Cloud. 
 ![Regulartory compliance assessment and standards](../Images/module4_compliancedashboardovertime_workbook_yl.png?raw=true)
 3.	For the workspace, select **asclab-la-XXXXXXXXXX** 
-4.	For the subscription, select **Subscription 1**
+4.	For the subscription, select your subscription.
 5.	For the standard name, select **All**, and now you can see the workbook.
 ![Regulatory compliance assessment and standards](../Images/lab4rc11.jpg?raw=true)
 >Note 1: You need to complete the previous exercise of setting up Continuous Export to the Log Analytics workspace for the Compliance Over Time Workbook to work.
