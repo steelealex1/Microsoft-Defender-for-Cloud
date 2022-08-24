@@ -23,12 +23,12 @@ Note: This is the default policy for Microsoft Defender for Cloud recommendation
 
 
 4.	Click on the assign assignment: **ASC Default (subscription: xxx...)**. Microsoft Defender for Cloud assesses your environment and audit data and do not enforce without your approval.
-5.	On the Edit Initiative Assignment page, click on **Parameters**
+5.	On the Edit Initiative Assignment page, click on **Parameters**.
 6.	On the Parameters page, untick the box "Only show parameters that require input". Search for **Network Security Groups on the subnet level should be enabled**
 7.	On the **Network Security Groups on the subnet level should be enabled**, change the action to AuditIfNotExists to enable monitoring of NSGs on subnets.
 ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/lab3pl.gif?raw=true)
-8.	Click on **Review + save**
-9.	On the review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**
+8.	Click on **Review + save**.
+9.	On the review tab, you can see your changes under the Parameters section: **networkSecurityGroupsOnSubnetsMonitoringEffect: AuditIfNotExists**.
 
 ![Modifying Microsoft Defender for Cloud default policy assignment](../Images/asc-default-policy-nsg-recommendation.gif?raw=true)
 
@@ -46,13 +46,12 @@ Note: This is the default policy for Microsoft Defender for Cloud recommendation
     - ASC OpenSourceRelationalDatabasesProtection
     - ASC Default 
 
-7.	Click on **ASC Default** to edit assignment details
+7.	Click on **ASC Default** to edit assignment details.
 8.	As you can see, this is the same assignment page as presented in the previous section. Now exit.
 
 ### Exercise 3: Create resource exemption for a recommendation
 
-Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation.
-When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create exemption.
+Resource exemption will allow increased granularity for you to fine-tune recommendations by providing the ability to exempt certain resources from evaluation. When working with a recommendation, you can create an exemption by clicking the ellipsis menu on the right side and then select create exemption.
 
 Note: Exemptions is a premium Azure policy capability that's offered for Microsoft Defender for Cloud customers with no additional cost. For other users, charges may apply in the future.
 
@@ -99,7 +98,7 @@ Note: Exemptions is a premium Azure policy capability that's offered for Microso
 4.	From the top menu bar, click on **Deny** button. *Enforce and Deny options provide you another way to improve your score by preventing security misconfigurations*.
 
 > ❗ Important: <br>
-> Security misconfigurations are a major cause of security incidents
+> Security misconfigurations are a major cause of security incidents.
 
 5.	On the **Deny - Prevent resource creation**, select **Azure subscription 1** (which is currently set to audit mode). This allow you to ensure that from now on, storage account without the security transfer feature turned on will be denied.
 
@@ -147,7 +146,7 @@ Add each policy one by one:
     - *Public network access on Azure SQL Database should be disabled*
     - *Storage accounts should restrict network access*
 
-1. Select **Review + Create**. Click **Create**.
+7. Select **Review + Create**. Click **Create**.
 
 ***Add a custom initiative to your subscription***
 
