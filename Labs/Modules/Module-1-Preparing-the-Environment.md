@@ -120,7 +120,7 @@ When the deployment is complete, you should see the following:
    
     ![Environment settings](../Images/mdfc-envsettings2.png?raw=true)
 
-4. Ensure that plans for **Servers** and **Databases** are turned **On**. To check for **SQL servers on machines**, in Databases, click on **Select types** and make sure all 4 are turned on. 
+4. Ensure that plans for **Servers** and **Databases** are turned **On**. To check for **SQL servers on machines**, in Databases, click on **Select types** and make sure **SQL servers on machines** is toggled **On**. 
 
 ![Environment settings](../Images/module1_defenderCoverageStatus_dbSQL_yl.png?raw=true)
 
